@@ -1,0 +1,194 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  background: #f4f4f4;
+  color: #333;
+}
+
+header {
+  background: #222;
+  color: white;
+  padding: 1rem 2rem;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 1rem;
+}
+
+.nav-links a {
+  color: white;
+  text-decoration: none;
+}
+
+.hero {
+  text-align: center;
+  padding: 5rem 2rem;
+  background: linear-gradient(to right, #0052D4, #4364F7, #6FB1FC);
+  color: white;
+}
+
+.hero h2 span {
+  color: #FFD700;
+}
+
+.btn {
+  background: #FFD700;
+  padding: 0.7rem 1.5rem;
+  color: black;
+  border-radius: 5px;
+  text-decoration: none;
+}
+
+section {
+  padding: 3rem 2rem;
+  text-align: center;
+}
+
+.skills-list span {
+  background: #eee;
+  padding: 0.5rem 1rem;
+  margin: 0.3rem;
+  display: inline-block;
+  border-radius: 4px;
+}
+
+.projects-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  gap: 1.5rem;
+}
+
+.project-card {
+  background: white;
+  border-radius: 6px;
+  overflow: hidden;
+  box-shadow: 0px 3px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s;
+}
+
+.project-card:hover {
+  transform: translateY(-5px);
+}
+
+.project-card img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+
+.project-info {
+  padding: 1rem;
+}
+
+.project-info h3 {
+  color: #0052D4;
+}
+
+.project-info p {
+  margin: 0.3rem 0;
+}
+
+.project-info .btn {
+  display: inline-block;
+  margin: 0.3rem 0.3rem 0 0;
+  background: #FFD700;
+  padding: 0.4rem 1rem;
+  border-radius: 4px;
+  color: black;
+  text-decoration: none;
+  font-size: 0.9rem;
+}
+
+.project-info .btn:hover {
+  background: #ffc107;
+}
+
+
+/* Education Section */
+.education-timeline {
+  max-width: 800px;
+  margin: 0 auto;
+  text-align: left;
+}
+
+.education-item {
+  background: white;
+  padding: 1rem 1.5rem;
+  margin-bottom: 1.5rem;
+  border-radius: 6px;
+  box-shadow: 0px 3px 8px rgba(0, 0, 0, 0.1);
+}
+
+.education-item h3 {
+  color: #0052D4;
+  margin-bottom: 0.3rem;
+}
+
+.education-item p {
+  margin: 0.3rem 0;
+}
+
+
+form input, form textarea {
+  width: 100%;
+  padding: 0.8rem;
+  margin: 0.5rem 0;
+}
+
+form button {
+  background: #0052D4;
+  color: white;
+  border: none;
+  padding: 0.8rem 1.5rem;
+  cursor: pointer;
+}
+
+footer {
+  text-align: center;
+  background: #222;
+  color: white;
+  padding: 1rem;
+}
+
+/* Smooth scroll */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Fade-in animation */
+.fade-in {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 0.8s ease-out, transform 0.8s ease-out;
+}
+
+.fade-in.show {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Hover animations */
+.btn:hover {
+  background: #ffc107;
+  transform: scale(1.05);
+  transition: 0.3s;
+}
+
+.nav-links a:hover {
+  color: #FFD700;
+  transition: 0.3s;
+}
+
+.project-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.2);
+  transition: 0.3s;
+}
